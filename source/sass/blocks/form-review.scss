@@ -1,0 +1,211 @@
+.form {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review__title {
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.form-review__item {
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid $color-bottom;
+}
+
+.form-review__title {
+  @include title;
+  text-align: center;
+}
+
+.login-form__field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.label__field {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: $color-lightblack;
+  text-transform: uppercase;
+}
+
+.input__field {
+  width: 100%;
+  padding: 18px 14px 22px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-black;
+  background-color: $color-lightgrey;
+  border: none;
+}
+
+.form-contacts {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    grid-column: 1 / -1;
+  }
+}
+
+.form-contacts__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form-contacts__field {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.contacts-phone__hide {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.input__field--phone,
+.input__field--email {
+  min-width: 280px;
+}
+
+.input__field--phone {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet) {
+   margin-bottom: 0;
+  }
+}
+
+.form-impression {
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    order: -1;
+  }
+}
+
+.form-impression__list {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  list-style: none;
+}
+
+.form-impression__item {
+  margin-bottom: 43px;
+}
+
+.form-impression__item:last-child {
+  margin-bottom: 0;
+}
+
+.form-attractions {
+  @media (min-width: $tablet) {
+    grid-column: 1 / -1;
+  }
+}
+
+.form-attractions__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form-attractions__item--bridge {
+  @media (min-width: $tablet) {
+    grid-column: 2 / 3;
+  }
+}
+
+.form-attractions__item--mount {
+  @media (min-width: $tablet) {
+    grid-column: 3 / 4;
+  }
+}
+
+.form-attractions__item--park {
+  @media (min-width: $tablet) {
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+}
+
+.form-attractions__item--rocks {
+  @media (min-width: $tablet) {
+    grid-column: 3 / -1;
+    grid-row: 2;
+  }
+}
+
+.form-attractions__item,
+.form-feedback__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form-feedback {
+  border: none;
+
+  @media (min-width: $tablet) {
+    grid-column: span 2;
+  }
+}
+
+.form-feedback__emotions {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  @include title;
+}
+
+.form-feedback__text {
+  min-width: 100%;
+  min-height: 160px;
+  background-color: $color-lightgrey;
+  border: none;
+}
+
+.form-review__button {
+  @include title;
+  padding: 18px 33px 13px 32px;
+}
+
+.form-span {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    text-align: right;
+  }
+}

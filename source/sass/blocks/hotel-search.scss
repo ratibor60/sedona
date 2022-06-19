@@ -1,0 +1,33 @@
+.hotel-search__content {
+  padding-top: 17px;
+  padding-bottom: 49px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotel-search__text {
+  margin-bottom: 27px;
+  line-height: 24px;
+}
+
+.hotel-search__link {
+  @include title;
+  padding: 17px 32px;
+}
+
+.hotel-search__map {
+  position: relative;
+}
+
+.hotel-search__map::before {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 27px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("../img/icon/map-marker.svg");
+}

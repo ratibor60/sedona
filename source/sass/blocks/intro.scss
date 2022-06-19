@@ -1,0 +1,21 @@
+.intro {
+  padding-top: 32px;
+  padding-bottom: 27px;
+  text-align: center;
+}
+
+.intro__title {
+  @include title;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.intro__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}

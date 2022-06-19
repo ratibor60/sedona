@@ -1,0 +1,16 @@
+.info {
+  padding-top: 9px;
+  border-bottom: 1px solid $color-bottom;
+  text-align: center;
+}
+
+.info__title {
+  @include title;
+  text-align: center;
+}
+
+.info__text {
+  @include fz-400;
+  margin: 0;
+  text-transform: uppercase;
+}

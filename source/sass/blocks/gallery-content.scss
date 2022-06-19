@@ -1,0 +1,16 @@
+.gallery-content {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gallery-content__title {
+  @include title;
+}
+
+.gallery-content__text {
+  @include fz-400;
+}
+
+.content-video__image {
+  min-width: 100%;
+}

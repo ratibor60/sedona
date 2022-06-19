@@ -1,0 +1,48 @@
+.page {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  height: 100%;
+}
+
+.page__body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+.page__wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  margin: 0 auto;
+  width: 320px;
+  background-color: $color-white;
+  box-shadow: 0 5px 15px 0 rgba($color-black, 0.2);
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+.page-main__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    padding: 0 120px;
+  }
+}
+
