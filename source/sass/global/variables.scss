@@ -3,6 +3,8 @@
 $color-blue: #81b3d2;
 $blue-hover: #669ec0;
 $blue-down: #5496bd;
+$color-active: #766357;
+$active-hover: #604E43;
 $color-black: #000000;
 $color-white: #ffffff;
 $color-grey: #e7e5e5;
@@ -10,9 +12,11 @@ $color-lightgrey: #f2f2f2;
 $color-lightblack: #333333;
 $color-bottom: #e5e5e5;
 $color-bg-grey: #eeeeee;
+$color-bg-promo: #6c4d4b;
+$color-border:  #d6d6d6;
 
 // Viewports
 
-$mobile: 320px;
+$mobile: 767px;
 $tablet: 768px;
 $desktop: 1200px;

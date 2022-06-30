@@ -7,4 +7,17 @@
   text-transform: uppercase;
   text-align: center;
   border: none;
+
+  @media (min-width: $tablet) {
+    min-width: 458px;
+  }
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+    color: rgba($color-white, 0.2);
+  }
 }

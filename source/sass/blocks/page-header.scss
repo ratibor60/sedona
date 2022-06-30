@@ -1,18 +1,20 @@
 .page-header {
-  position: relative;
-  padding-bottom: 360px;
-  background-image: url('../img/promo-mobile.png');
-  background-repeat: no-repeat;
-  background-position: center bottom;
   background-color: $color-white;
 }
 
-.page-header::before {
+.page-header__promo {
+  position: relative;
+  max-width: 518px;
+  min-height: 389px;
+  background-color: $color-bg-promo;
+}
+
+.page-header__promo::before {
   position: absolute;
   content: "";
   width: 282px;
   height: 214px;
-  top: 40px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -20,13 +22,12 @@
   background-image: url("../img/icon/promo-sedona.svg");
 }
 
-.page-header__logo {
-  position: absolute;
-  left: calc(50% - 51px);
-  top: 0;
-  height: 84px;
+.page-header__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
 
-  @media (min-width: $desktop) {
-    height: 96px;
+  @media (min-width: $mobile) {
+    max-height: 389px;
   }
 }

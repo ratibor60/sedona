@@ -2,6 +2,10 @@
   padding-top: 32px;
   padding-bottom: 27px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 38px;
+  }
 }
 
 .intro__title {

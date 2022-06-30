@@ -12,17 +12,14 @@
 <body class="page__body">
   <div class="page__wrapper">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/icon/logotype-mobile.svg" alt="логотип сайта Sedona" width="102" height="84">
-      </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span aria-label="Открыть меню"></span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link active" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -35,7 +32,14 @@
             </li>
           </ul>
         </div>
+        <a class="main-nav__logo">
+          <img src="img/icon/logotype-mobile.svg" alt="логотип сайта Sedona" width="102" height="84">
+        </a>
       </nav>
+      <div class="page-header__promo">
+        <img class="page-header__image" src="../img/promo-mobile.png" alt="Изображение гор и надпись Добро пожаловать"
+          width="901" height="389">
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Добро пожаловать в Sedona</h1>
@@ -43,8 +47,8 @@
         <div class="intro__wrapper">
           <h2 class="visually-hidden"> Наши преимущества</h2>
           <p class="intro__title">
-            СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
-          <p class="intro__text">Рассмотрим 5 причин, по которым<br> Седона круче, чем
+            СЕДОНА — небольшой городок в АРИЗОНЕ,<br> заслуживающий большего!</p>
+          <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем
             гранд каньон!</p>
         </div>
       </section>
@@ -58,21 +62,21 @@
             </div>
             <img class="advantages__image" src="../img/photo-city@1x 1.jpg" alt="Фото мотеля" width="520" height="260">
           </li>
-          <li class="advantages__item advantages__features">
-            <div class="advantages__wrapper">
-              <h3 class="advantages__subtitle">Жилье</h3>
+          <li class="advantages__item advantages-features advantages-features--house">
+            <div class="advantages-features__wrapper">
+              <h3 class="advantages__subtitle advantages__subtitle--house">Жилье</h3>
               <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
           </li>
-          <li class="advantages__item advantages__features">
-            <div class="advantages__wrapper">
-              <h3 class="advantages__subtitle">Сувениры</h3>
+          <li class="advantages__item advantages-features advantages-features--gift">
+            <div class="advantages-features__wrapper">
+              <h3 class="advantages__subtitle advantages__subtitle--gift">Сувениры</h3>
               <p class="advantages__description">Не только китайского, но и местного производства!</p>
             </div>
           </li>
-          <li class="advantages__item advantages__features">
-            <div class="advantages__wrapper">
-              <h3 class="advantages__subtitle">Еда</h3>
+          <li class="advantages__item advantages-features advantages-features--burger">
+            <div class="advantages-features__wrapper">
+              <h3 class="advantages__subtitle advantages__subtitle--burger">Еда</h3>
               <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </div>
           </li>
@@ -86,22 +90,22 @@
               alt="Фото моста дьявола" width="520" height="260">
           </li>
           <li class="advantages__item advantages__item--fund">
-            <div class="advantages__wrapper">
-              <h2 class="advantages__title">Небольшая площадь</h2>
+            <div class="advantages__wrapper--inner advantages__wrapper--border">
+              <h2 class="advantages__title">Небольшая<br> площадь</h2>
               <p class="advantages__number">— №3 —</p>
               <p class="advantages__text">ВСЕ интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="advantages__item advantages__item--fund">
-            <div class="advantages__wrapper">
-              <h2 class="advantages__title">Красивая дорога</h2>
+            <div class="advantages__wrapper--inner advantages__wrapper--border">
+              <h2 class="advantages__title">Красивая<br> дорога</h2>
               <p class="advantages__number">— №4 —</p>
               <p class="advantages__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
             </div>
           </li>
           <li class="advantages__item advantages__item--fund">
-            <div class="advantages__wrapper">
-              <h2 class="advantages__title">Мало туристов</h2>
+            <div class="advantages__wrapper--inner">
+              <h2 class="advantages__title">Мало<br> туристов</h2>
               <p class="advantages__number">— №5 —</p>
               <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
             </div>
@@ -112,7 +116,7 @@
         <div class="hotel-search__wrapper">
           <div class="hotel-search__content">
             <h2 class="hotel-search__title">Заинтересовались?</h2>
-            <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+            <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
               гостиниц в седоне</p>
             <a href="#" class="hotel-search__link button">Найти гостиницу</a>
           </div>
@@ -156,6 +160,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

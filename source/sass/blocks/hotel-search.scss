@@ -3,11 +3,28 @@
   padding-bottom: 49px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    padding-top: 41px;
+    padding-bottom: 58px;
+  }
+}
+
+.hotel-search__title {
+  @media (min-width: $tablet) {
+    margin-bottom: 25px;
+  }
 }
 
 .hotel-search__text {
   margin-bottom: 27px;
   line-height: 24px;
+
+  @media (max-width: $mobile) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .hotel-search__link {
