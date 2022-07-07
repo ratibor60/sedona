@@ -1,0 +1,39 @@
+.radio {
+  padding-left: 70px;
+}
+
+.radio__input + label {
+  position: relative;
+  display: inline-block;
+}
+
+.radio__input + label::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: -70px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $color-lightgrey;
+  cursor: pointer;
+}
+
+.radio__input + label:hover::before,
+.radio__input + label:focus::before {
+  background-color: $color-bottom;
+}
+
+.radio__input:checked + label::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -55px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $color-lightblack;
+}
+

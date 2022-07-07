@@ -11,17 +11,14 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/icon/logotype-mobile.svg" alt="логотип сайта Sedona" width="102" height="84">
-    </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span aria-label="Открыть меню"></span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link active" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -34,7 +31,14 @@
           </li>
         </ul>
       </div>
+      <a class="main-nav__logo">
+        <img src="img/icon/logotype-mobile.svg" alt="логотип сайта Sedona" width="102" height="84">
+      </a>
     </nav>
+    <div class="page-header__promo">
+      <img class="page-header__image" src="../img/promo-mobile.png" alt="Изображение гор и надпись Добро пожаловать"
+        width="901" height="389">
+    </div>
   </header>
   <main class="page-main">
     <div class="page-main__wrapper">
@@ -136,6 +140,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
