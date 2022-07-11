@@ -1,4 +1,6 @@
 .gallery-content {
+  padding-top: 20px;
+  padding-bottom: 86px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -9,8 +11,76 @@
 
 .gallery-content__text {
   @include fz-400;
+  padding: 0 25px;
+  padding-bottom: 30px;
 }
 
-.content-video__image {
+.gallery-video {
+  position: relative;
+}
+
+.gallery-video__image {
+  display: block;
   min-width: 100%;
+  min-height: 100%;
+}
+
+.panel__controls {
+  position: absolute;
+  margin: 0 auto;
+  left: 20px;
+  bottom: 0;
+  padding-top: 22px;
+  width: 280px;
+  height: 45px;
+  background-color: rgba($color-black, 0.6);
+}
+
+.panel__scale {
+  position: relative;
+  margin-left: 22px;
+  width: 235px;
+  height: 3px;
+  background-color: rgba($color-white, 0.2);
+}
+
+.panel__toggle {
+  position: absolute;
+  top: -5px;
+  left: 35px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: $color-white;
+  cursor: pointer;
+}
+
+.panel__button {
+  position: absolute;
+  left: 20px;
+  bottom: -66px;
+  width: 280px;
+  height: 66px;
+  background-color: $color-lightgrey;
+}
+
+.panel__button--replay {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  border: none;
+}
+
+.panel__button--subtitles {
+  position: absolute;
+  top: 23px;
+  right: 74px;
+  border: none;
+}
+
+.panel__button--fullscreen {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  border: none;
 }

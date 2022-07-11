@@ -1,8 +1,13 @@
 .checkbox {
   padding-left: 70px;
 }
+
 .checkbox:not(:last-child) {
   padding-bottom: 54px;
+
+  @media (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 }
 
 .checkbox__input + label {

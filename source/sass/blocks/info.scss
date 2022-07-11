@@ -1,5 +1,6 @@
 .info {
   padding-top: 9px;
+  padding-bottom: 30px;
   border-bottom: 1px solid $color-bottom;
   text-align: center;
 }
@@ -7,6 +8,7 @@
 .info__title {
   @include title;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .info__text {

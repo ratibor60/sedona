@@ -21,6 +21,18 @@
       background-color: $color-bottom;
     }
   }
+
+  &::before {
+    @media (min-width: $tablet) {
+      position: absolute;
+      content: "";
+      top: 20px;
+      left: 5px;
+      width: 1px;
+      height: 292px;
+      background-color: $color-decor;
+    }
+  }
 }
 
 .review__title {
@@ -31,19 +43,20 @@
 }
 
 .form-review__item {
-  padding: 0 20px;
+  padding: 0;
   margin: 0;
   border: none;
+}
+
+.form-review__item--login {
+  @media (min-width: $tablet) {
+    padding-left: 58px;
+  }
 }
 
 .form-review__title {
   @include title;
   text-align: center;
-  padding-bottom: 7px;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 49px;
-  }
 }
 
 .login-form__field {
@@ -62,6 +75,10 @@
 
 .label__field--contact {
   padding-left: 15px;
+
+  @media (min-width: $desktop) {
+    padding-left: 0;
+  }
 }
 
 .input__field {
@@ -95,19 +112,64 @@
   @media (min-width: $tablet) {
     grid-column: 1 / -1;
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 50px;
+  }
+}
+
+.form-review__title--contacts {
+  @media (min-width: $tablet) {
+    position: relative;
+    margin-top: 52px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: $color-decor;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: $color-decor;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 70px;
+
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
 }
 
 .form-contacts__wrapper {
-
   @media (min-width: $desktop) {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 }
 
 .form-contacts__field {
+  @media (min-width: $tablet) {
+    margin-bottom: 25px;
+  }
+
   @media (min-width: $desktop) {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -120,6 +182,10 @@
 .input__field--phone,
 .input__field--email {
   min-width: 280px;
+
+  @media (min-width: $desktop) {
+    max-width: 316px;
+  }
 }
 
 .input__field--phone {
@@ -161,6 +227,14 @@
 
   @media (min-width: $tablet) {
     order: -1;
+  }
+}
+
+.form-impression__title,
+.form-review__title--login {
+  @media (min-width: $tablet) {
+    margin-bottom: 49px;
+    text-align: left;
   }
 }
 
@@ -208,6 +282,47 @@
   @media (min-width: $tablet) {
     grid-column: 1 / -1;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 35px;
+  }
+}
+
+.form-review__title--attractions {
+  @media (min-width: $tablet) {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 20px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: $color-decor;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 20px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: $color-decor;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 55px;
+
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
 }
 
 .form-attractions__list {
@@ -217,14 +332,16 @@
 
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 35px;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
   }
 }
 
@@ -274,6 +391,38 @@
   margin-bottom: 15px;
   text-align: center;
   @include title;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    margin-bottom: 50px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: $color-decor;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 10px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: $color-decor;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
 }
 
 .form-feedback__text {
@@ -285,17 +434,34 @@
 }
 
 .form-review__button--wrapper {
-  padding: 0 20px;
+  padding-top: 50px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 648px;
+    padding-top: 58px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 960px;
+    padding-bottom: 95px;
+  }
 }
 
 .form-review__button {
   @include title;
   padding: 18px 33px 13px 32px;
-  margin-top: 50px;
 
   @media (max-width: $mobile) {
     display: block;
     width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 480px;
   }
 }
 
@@ -304,6 +470,7 @@
 
   @media (min-width: $tablet) {
     display: block;
-    text-align: right;
+    text-align: center;
+    margin: 0;
   }
 }

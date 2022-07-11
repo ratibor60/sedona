@@ -15,7 +15,7 @@
 }
 
 .gallery__item {
-  padding-top: 22px;
+  padding: 22px 20px;
   padding-bottom: 15px;
   border-bottom: 1px solid $color-bottom;
 
@@ -46,6 +46,18 @@
 }
 
 .gallery-description__like-count {
+  position: relative;
+  padding-left: 37px;
   @include fz-700;
   text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 21px;
+    left: 0;
+    bottom: 0;
+    background-image: url("../img/icon/like-icon.svg");
+  }
 }
