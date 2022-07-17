@@ -7,9 +7,48 @@
   max-width: 518px;
   min-height: 389px;
   background-color: $color-bg-promo;
+  background-image: url("../img/promo-mobile.jpg");
+  background-repeat: no-repeat;
+
+  &::after {
+    position: absolute;
+    content: "";
+    min-width: 320px;
+    height: 57px;
+    bottom: 0;
+    background-image: url("../img/icon/triangle-mobile.svg");
+
+    @media (min-width: $tablet) {
+      min-width: 768px;
+      background-image: url("../img/icon/triangle-tablet.svg");
+    }
+
+    @media (min-width: $desktop) {
+      min-width: 1200px;
+      background-image: url("../img/icon/triangle-desktop.svg");
+    }
+  }
+
+  @media (max-width: $tablet) {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 1200px;
+    height: 518px;
+    background-image: url("../img/promo-desktop.jpg");
+    background-position: 50%;
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-desktop@2x.jpg");
+    background-size: cover;
+  }
+  }
 }
 
-.page-header__promo::before {
+.page-header__image {
+  display: block;
   position: absolute;
   content: "";
   width: 282px;
@@ -19,15 +58,69 @@
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url("../img/icon/promo-sedona.svg");
+
+  @media (min-width: $tablet) {
+    width: 461px;
+    height: 350px;
+  }
 }
 
-.page-header__image {
-  display: block;
-  object-fit: cover;
-  width: 100%;
+.page-header__promo--form {
+  position: relative;
+  max-width: 518px;
+  min-height: 158px;
+  background-color: $color-bg-promo;
+  background-image: url("../img/promo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
 
-  @media (min-width: $mobile) {
-    max-height: 389px;
+  &::after {
+    position: absolute;
+    content: "";
+    min-width: 320px;
+    height: 57px;
+    bottom: 0;
+    background-image: url("../img/icon/triangle-mobile.svg");
+
+    @media (min-width: $tablet) {
+      min-width: 768px;
+      background-image: url("../img/icon/triangle-tablet.svg");
+    }
+
+    @media (min-width: $desktop) {
+      min-width: 1200px;
+      background-image: url("../img/icon/triangle-desktop.svg");
+    }
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 1200px;
+    height: 290px;
+    background-image: url("../img/promo-desktop.jpg");
+    background-position: 50%;
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-desktop@2x.jpg");
+    background-size: cover;
+  }
+  }
+}
+
+.page-header__image--form {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 229px;
+  height: 39px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  @media (min-width: $tablet) {
+    width: 457px;
+    height: 78px;
   }
 }

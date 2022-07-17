@@ -1,6 +1,10 @@
 .page-footer {
-  padding-top: 7px;
+  padding-top: 17px;
   padding-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    padding-top: 36px;
+  }
 }
 
 .page-footer__wrapper {

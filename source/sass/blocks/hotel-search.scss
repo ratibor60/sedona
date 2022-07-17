@@ -34,6 +34,15 @@
 
 .hotel-search__map {
   position: relative;
+  max-width: 350px;
+
+  @media (min-width: $tablet) {
+    min-width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: $desktop;
+  }
 }
 
 .hotel-search__map::before {
@@ -47,4 +56,9 @@
   bottom: 0;
   margin: auto;
   background-image: url("../img/icon/map-marker.svg");
+}
+
+.hotel-search__map img {
+  display: block;
+  width: 100%;
 }

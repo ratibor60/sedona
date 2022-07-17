@@ -1,5 +1,5 @@
 .info {
-  padding-top: 9px;
+  padding-top: 15px;
   padding-bottom: 30px;
   border-bottom: 1px solid $color-bottom;
   text-align: center;
@@ -9,10 +9,20 @@
   @include title;
   text-align: center;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+  }
 }
 
 .info__text {
   @include fz-400;
   margin: 0;
   text-transform: uppercase;
+
+  br {
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
 }

@@ -91,6 +91,15 @@
   color: $color-black;
   background-color: $color-lightgrey;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-bottom;
+  }
+
+  &:active {
+    background-color: $color-white;
+  }
 }
 
 .form-contacts {
@@ -211,7 +220,7 @@
 
 .form-impression {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 
   &::after {
     @media (max-width: $mobile) {
@@ -265,7 +274,7 @@
 
 .form-attractions {
   position: relative;
-  padding-bottom: 18px;
+  padding-bottom: 40px;
 
   &::after {
     @media (max-width: $mobile) {

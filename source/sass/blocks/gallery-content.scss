@@ -3,26 +3,61 @@
   padding-bottom: 86px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    padding-top: 43px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 94px;
+  }
 }
 
 .gallery-content__title {
   @include title;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .gallery-content__text {
   @include fz-400;
   padding: 0 25px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 55px;
+  }
 }
 
 .gallery-video {
   position: relative;
+
+  @media (min-width: $tablet) {
+    max-height: 500px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+  }
 }
 
 .gallery-video__image {
   display: block;
   min-width: 100%;
   min-height: 100%;
+
+  @media (min-width: $tablet) {
+    max-height: 500px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 500px;
+  }
 }
 
 .panel__controls {
@@ -34,6 +69,14 @@
   width: 280px;
   height: 45px;
   background-color: rgba($color-black, 0.6);
+
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 93px;
+  }
 }
 
 .panel__scale {
@@ -42,6 +85,15 @@
   width: 235px;
   height: 3px;
   background-color: rgba($color-white, 0.2);
+
+  @media (min-width: $tablet) {
+    margin-left: 93px;
+    width: 489px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 540px;
+  }
 }
 
 .panel__toggle {
@@ -62,25 +114,87 @@
   width: 280px;
   height: 66px;
   background-color: $color-lightgrey;
+
+  @media (min-width: $tablet) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 93px;
+    background-color: transparent;
+  }
+}
+
+.control-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover path,
+  &:focus path {
+    fill: $button-hover;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop) {
+    &:hover path,
+    &:focus path {
+      fill-opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .panel__button--replay {
   position: absolute;
   top: 22px;
   left: 25px;
-  border: none;
+
+  @media (min-width: $tablet) {
+    top: 35px;
+    left: 35px;
+
+    & path {
+      fill: $color-white;
+    }
+  }
 }
 
 .panel__button--subtitles {
   position: absolute;
   top: 23px;
   right: 74px;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    top: 36px;
+    right: 92px;
+
+    & path {
+      fill: $color-white;
+    }
+  }
 }
 
 .panel__button--fullscreen {
   position: absolute;
   top: 23px;
   right: 23px;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    top: 36px;
+    right: 41px;
+
+    & path {
+      fill: $color-white;
+    }
+  }
 }

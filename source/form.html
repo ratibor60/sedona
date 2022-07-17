@@ -33,12 +33,15 @@
           </ul>
         </div>
         <a class="main-nav__logo">
-          <img src="img/icon/logotype-mobile.svg" alt="логотип сайта Sedona" width="102" height="84">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/icon/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/icon/logotype-tablet.svg">
+            <img src="img/icon/logotype-mobile.svg" alt="логотип сайта Sedona" width="102" height="84">
+          </picture>
         </a>
       </nav>
-      <div class="page-header__promo">
-        <img class="page-header__image" src="../img/promo-mobile.png" alt="Изображение гор и надпись Добро пожаловать"
-          width="901" height="389">
+      <div class="page-header__promo--form">
+        <img class="page-header__image--form" src="img/icon/sedona-form.svg" alt="надпись sedona" width="229" height="39">
       </div>
     </header>
     <main class="page-main">
