@@ -128,25 +128,29 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: $color-icon;
 
-  &:hover path,
-  &:focus path {
-    fill: $button-hover;
+  &:hover,
+  &:focus {
+    color: $button-hover;
   }
+
   &:active {
     opacity: 0.3;
   }
 
   @media (min-width: $desktop) {
-    &:hover path,
-    &:focus path {
-      fill-opacity: 0.6;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
     }
     &:active {
       opacity: 0.3;
     }
   }
 }
+
 
 .panel__button--replay {
   position: absolute;
@@ -157,8 +161,8 @@
     top: 35px;
     left: 35px;
 
-    & path {
-      fill: $color-white;
+    & svg {
+      color: $color-white;
     }
   }
 }
@@ -175,8 +179,8 @@
     top: 36px;
     right: 92px;
 
-    & path {
-      fill: $color-white;
+    & svg {
+      color: $color-white;
     }
   }
 }
@@ -193,8 +197,8 @@
     top: 36px;
     right: 41px;
 
-    & path {
-      fill: $color-white;
+    & svg {
+      color: $color-white;
     }
   }
 }
