@@ -199,7 +199,7 @@
 
 .input__field--phone {
   margin-bottom: 14px;
-  background-image: url(../img/icon/phone.svg),
+  background-image: url("../img/icon/phone.svg"),
     linear-gradient(to left, $color-bg-icon 58px, transparent 58px);
   background-repeat: no-repeat;
   background-position: right 20px top 50%, 0 0;
@@ -211,7 +211,7 @@
 }
 
 .input__field--email {
-  background-image: url(../img/icon/mail.svg),
+  background-image: url("../img/icon/mail.svg"),
     linear-gradient(to left, $color-bg-icon 58px, transparent 58px);
   background-repeat: no-repeat;
   background-position: right 20px top 50%, 0 0;
@@ -399,6 +399,7 @@
   margin-top: 20px;
   margin-bottom: 15px;
   text-align: center;
+
   @include title;
 
   @media (min-width: $tablet) {

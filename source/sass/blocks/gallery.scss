@@ -92,8 +92,9 @@
 .gallery-description__like-count {
   position: relative;
   padding-left: 37px;
-  @include fz-700;
   text-transform: uppercase;
+
+  @include fz-700;
 
   &::before {
     position: absolute;

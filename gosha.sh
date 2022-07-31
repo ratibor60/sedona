@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "Remove less files"
-rm -R source/less
+echo "Remove sass files"
+rm -R source/sass
 exit 0

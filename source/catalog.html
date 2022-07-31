@@ -5,7 +5,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/icon16.png" type="image/png">
+  <link rel="icon" href="img/favicon/icon32.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicon/icon152.png" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Catalog-sedona</title>
 </head>
 
@@ -49,7 +54,11 @@
           </ul>
         </div>
         <a class="main-nav__logo">
-          <img src="img/icon/logotype-mobile.svg" alt="логотип сайта Sedona" width="102" height="84">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/icon/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/icon/logotype-tablet.svg">
+            <img src="img/icon/logotype-mobile.svg" alt="логотип сайта Sedona" width="102" height="84">
+          </picture>
         </a>
       </nav>
       <div class="page-header__promo--form">
