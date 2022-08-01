@@ -46,9 +46,13 @@ exports.html = html;
 
 const scripts = () => {
   return gulp
-    .src("source/js/script.js")
+    .src("source/js/*.js")
     .pipe(terser())
-    .pipe(rename("script.min.js"))
+    .pipe(
+      rename({
+        suffix: ".min",
+      })
+    )
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 };
